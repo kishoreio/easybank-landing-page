@@ -50,6 +50,9 @@ nav {
   border-radius: 1rem;
   cursor: pointer;
 }
+#mobile-res {
+  display: none;
+}
 /*Banner Css */
 main {
   position: relative;
@@ -237,4 +240,127 @@ main {
   color: var(--text-secondary);
   font-size: 0.9rem;
   font-weight: lighter;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-around;
+    background: var(--btn-color);
+    height: 6rem;
+  }
+  #header-nav,
+  #header-btn {
+    display: none;
+  }
+  #mobile-res {
+    display: inline;
+    transform: scale(1.5);
+  }
+  #logo {
+    position: relative;
+    left: -4rem;
+    transform: scale(1.5);
+  }
+  /* Banner */
+  #main-container {
+    background-image: url("../images/bg-intro-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 0rem;
+    min-height: 35rem;
+    position: relative;
+    left: 11rem;
+  }
+  #main-image {
+    position: relative;
+    top: -10rem;
+    left: -10.5rem;
+  }
+  #main-content {
+    position: absolute;
+    width: 100%;
+    top: 30rem;
+    left: -9.5rem;
+    text-align: center;
+    min-width: 30rem;
+  }
+  #main-content h1 {
+    font-size: 4rem;
+    font-weight: lighter;
+  }
+  #main-content p {
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+  }
+  .main-btn {
+    transform: scale(1.9);
+    margin-top: 1.5rem;
+  }
+  /* Feature */
+  #feature-container {
+    position: relative;
+    top: 20rem;
+  }
+  #feature-container {
+    min-width: 33rem;
+  }
+  #feature-content {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  #feature-content h1 {
+    font-size: 3rem;
+    width: 90%;
+    text-align: center;
+    padding-top: 4rem;
+  }
+  #feature-content p {
+    font-size: 1.4rem;
+    width: 90%;
+    text-align: center;
+    line-height: 2.2rem;
+    margin-top: -0.5rem;
+  }
+  #feature-box {
+    margin-left: 0;
+    width: 100%;
+    position: static;
+    flex-direction: column;
+    padding: 3.5rem 0;
+  }
+  .feature-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  .feature-section img {
+    transform: scale(1.4);
+  }
+  .feature-section h4 {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+  }
+  .feature-section p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-top: -1rem;
+  }
+  /* article */
+  #article-container {
+    position: relative;
+    top: 20rem;
+    min-width: 33rem;
+  }
+  #article-container h1 {
+  }
 }
