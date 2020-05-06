@@ -377,5 +377,42 @@ main {
   }
   #footer-container {
     top: 12rem;
+    flex-direction: column;
+    min-height: 30rem;
+  }
+  #footer-section-one {
+    width: 100%;
+    flex-direction: column;
+  }
+  #footer-logo {
+    align-items: center;
+    padding-top: 3rem;
+  }
+  .footer-img {
+    position: relative;
+    left: 3.5rem;
+  }
+  #footer-social {
+    padding: 2rem 0rem;
+  }
+  #footer-social img {
+    padding: 0rem 0.3rem;
+  }
+  .footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2.5rem;
+    text-align: center;
+    margin-top: -1.5rem;
+  }
+  #footer-section-two {
+    align-items: center;
+  }
+  #footer-section-two p {
+    padding-top: 1rem;
+  }
+  .footer {
+    width: 70%;
   }
 }
