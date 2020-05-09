@@ -250,7 +250,7 @@ main {
     justify-content: space-around;
     background: var(--btn-color);
     height: 4.5rem;
-    max-width: 23rem;
+    width: 100%;
   }
   #header-nav,
   #header-btn {
@@ -259,7 +259,7 @@ main {
   #mobile-res {
     display: inline;
     position: relative;
-    right: -1rem;
+    right: 2rem;
   }
   #logo {
     position: relative;
@@ -278,7 +278,7 @@ main {
   #main-image {
     position: absolute;
     top: -13.5rem;
-    left: -4.6rem;
+    left: -4rem;
     transform: scale(0.7);
   }
   #main-content {
