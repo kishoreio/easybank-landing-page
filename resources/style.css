@@ -259,7 +259,7 @@ main {
   #mobile-res {
     display: inline;
     position: relative;
-    right: 2rem;
+    right: -1rem;
   }
   #logo {
     position: relative;
@@ -278,7 +278,7 @@ main {
   #main-image {
     position: absolute;
     top: -13.5rem;
-    left: -4rem;
+    left: -3.5rem;
     transform: scale(0.7);
   }
   #main-content {
