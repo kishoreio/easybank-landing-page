@@ -24,9 +24,20 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        position: relative;
+        top: 3rem;
+        color: hsl(233, 8%, 62%);
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: white;
+        text-decoration: none;
+      }
+      @media only screen and (max-width: 480px) {
+        .attribution {
+          position: relative;
+          top: 11rem;
+          padding-top: 0.2rem;
+        }
       }
     </style>
   </head>
@@ -189,7 +200,7 @@
     <footer id="footer-container">
       <div id="footer-section-one">
         <div id="footer-logo">
-          <img src="./images/logo.svg" alt="logo" class="footer-img" />
+          <img src="./images/logo-footer.svg" alt="logo" class="footer-img" />
           <div id="footer-social">
             <img src="./images/icon-facebook.svg" alt="fb" />
             <img src="./images/icon-youtube.svg" alt="youtube" />
@@ -218,6 +229,12 @@
         <p>&copy Easybank. All Rights Reserved</p>
       </div>
     </footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://twitter.com/kishoreio">Kishore.S</a>.
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
